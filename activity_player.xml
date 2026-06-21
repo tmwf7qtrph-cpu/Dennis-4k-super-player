@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- ExoPlayer view -->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!-- Overlay info bovenaan -->
+    <LinearLayout
+        android:id="@+id/overlay_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#AA000000"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Bestandsnaam" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_resolution"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp"
+                android:text="Resolutie: --" />
+
+            <TextView
+                android:id="@+id/tv_codec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp"
+                android:text="Codec: --" />
+
+            <TextView
+                android:id="@+id/tv_hdr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFD700"
+                android:textSize="13sp"
+                android:text="HDR: --" />
+
+            <TextView
+                android:id="@+id/tv_audio_codec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp"
+                android:text="Audio: --" />
+
+            <TextView
+                android:id="@+id/tv_hw_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#00FF88"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="HW ⚡" />
+
+            <TextView
+                android:id="@+id/tv_buffer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp"
+                android:text="Buffer: 0%" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Settings knop rechtsboven -->
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_preferences"
+        android:tint="#FFFFFF"
+        android:contentDescription="Instellingen" />
+
+</FrameLayout>

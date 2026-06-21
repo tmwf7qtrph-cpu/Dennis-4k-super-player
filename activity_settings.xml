@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Titel -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙ Instellingen"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- AUDIO sectie -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AUDIO"
+            android:textColor="#4FC3F7"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voorkeurstaal"
+            android:textColor="#BBBBBB"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/sp_audio_language"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#2A2A3E"
+            android:layout_marginBottom="20dp" />
+
+        <!-- VIDEO sectie -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#333355" android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIDEO"
+            android:textColor="#4FC3F7"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <CheckBox
+            android:id="@+id/cb_hardware_decoding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hardware Decoding (HW ⚡)"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:buttonTint="#4FC3F7"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/cb_tunnelled_playback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tunnelled Playback"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:buttonTint="#4FC3F7"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/cb_auto_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auto Play"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:buttonTint="#4FC3F7"
+            android:layout_marginBottom="16dp" />
+
+        <!-- VIDEO ZOOM -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video Zoom"
+            android:textColor="#BBBBBB"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_video_zoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/rb_fit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fit"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#4FC3F7"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rb_fill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fill"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#4FC3F7" />
+
+            <RadioButton
+                android:id="@+id/rb_stretch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stretch"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#4FC3F7" />
+        </RadioGroup>
+
+        <!-- SUBTITLES sectie -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#333355" android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ONDERTITELING"
+            android:textColor="#4FC3F7"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tekstgrootte"
+            android:textColor="#BBBBBB"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/sp_subtitle_size"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#2A2A3E"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positie (0=boven, 100=onder)"
+            android:textColor="#BBBBBB"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/sp_subtitle_position"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#2A2A3E"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Ondersteuning formaten info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ondersteunde formaten: SRT · ASS · SSA · VTT · SUB/IDX · PGS"
+            android:textColor="#666699"
+            android:textSize="12sp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Knoppen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Annuleren"
+                android:textColor="#FFFFFF"
+                android:background="#333355"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Opslaan"
+                android:textColor="#FFFFFF"
+                android:background="#4FC3F7" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

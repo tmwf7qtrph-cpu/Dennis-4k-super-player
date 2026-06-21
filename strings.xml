@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dennis 4K Super Player</string>
+    <string name="settings">Instellingen</string>
+    <string name="audio_language">Audiotaal</string>
+    <string name="subtitle_size">Ondertitelingsgrootte</string>
+    <string name="subtitle_position">Ondertitelingspositie</string>
+    <string name="hardware_decoding">Hardware Decoding</string>
+    <string name="tunnelled_playback">Tunnelled Playback</string>
+    <string name="auto_play">Automatisch afspelen</string>
+    <string name="video_zoom">Video zoom</string>
+    <string name="fit">Fit</string>
+    <string name="fill">Fill</string>
+    <string name="stretch">Stretch</string>
+    <string name="save">Opslaan</string>
+    <string name="cancel">Annuleren</string>
+    <string name="no_media">Geen media URL ontvangen</string>
+    <string name="playback_error">Afspeelfout</string>
+</resources>

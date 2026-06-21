@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Achtergrond -->
+    <path
+        android:fillColor="#0D0D1A"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z" />
+
+    <!-- Play knop driehoek -->
+    <path
+        android:fillColor="#4FC3F7"
+        android:pathData="M36,27 L36,81 L81,54 Z" />
+
+    <!-- 4K tekst achtergrond accent -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M0,90 L108,90 L108,108 L0,108 Z" />
+
+</vector>
